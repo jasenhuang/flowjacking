@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55262FEE1E8BB44000629FFE /* FJFlowStatistic.h in Headers */ = {isa = PBXBuildFile; fileRef = 55262FEC1E8BB44000629FFE /* FJFlowStatistic.h */; };
+		55262FEF1E8BB44000629FFE /* FJFlowStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = 55262FED1E8BB44000629FFE /* FJFlowStatistic.m */; };
+		55299D5F1E83C92500CD81F5 /* flowjacking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299D551E83C92500CD81F5 /* flowjacking.framework */; };
+		55299D641E83C92500CD81F5 /* flowjackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299D631E83C92500CD81F5 /* flowjackingTests.m */; };
+		55299D661E83C92500CD81F5 /* flowjacking.h in Headers */ = {isa = PBXBuildFile; fileRef = 55299D581E83C92500CD81F5 /* flowjacking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55299DBC1E83CCE300CD81F5 /* FJURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 55299DBA1E83CCE300CD81F5 /* FJURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55299DBD1E83CCE300CD81F5 /* FJURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299DBB1E83CCE300CD81F5 /* FJURLProtocol.m */; };
+		552D9CDF1E84F64500858504 /* FJFlowControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 552D9CDD1E84F64500858504 /* FJFlowControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		552D9CE01E84F64500858504 /* FJFlowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D9CDE1E84F64500858504 /* FJFlowControl.m */; };
+		555D3DFC1E8B9BD2002BCA5E /* FJFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 555D3DFA1E8B9BD2002BCA5E /* FJFlow.h */; };
+		555D3DFD1E8B9BD2002BCA5E /* FJFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */; };
+		55A7CCA41E83FE100053D0C2 /* FJSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A7CCA21E83FE100053D0C2 /* FJSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A7CCA51E83FE100053D0C2 /* FJSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A7CCA31E83FE100053D0C2 /* FJSessionProtocol.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55299D601E83C92500CD81F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55299D4C1E83C92500CD81F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55299D541E83C92500CD81F5;
+			remoteInfo = flowjacking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55262FEC1E8BB44000629FFE /* FJFlowStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFlowStatistic.h; sourceTree = "<group>"; };
+		55262FED1E8BB44000629FFE /* FJFlowStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFlowStatistic.m; sourceTree = "<group>"; };
+		55299D551E83C92500CD81F5 /* flowjacking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = flowjacking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55299D581E83C92500CD81F5 /* flowjacking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flowjacking.h; sourceTree = "<group>"; };
+		55299D591E83C92500CD81F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55299D5E1E83C92500CD81F5 /* flowjackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowjackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55299D631E83C92500CD81F5 /* flowjackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flowjackingTests.m; sourceTree = "<group>"; };
+		55299D651E83C92500CD81F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55299DBA1E83CCE300CD81F5 /* FJURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJURLProtocol.h; sourceTree = "<group>"; };
+		55299DBB1E83CCE300CD81F5 /* FJURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJURLProtocol.m; sourceTree = "<group>"; };
+		552D9CDD1E84F64500858504 /* FJFlowControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFlowControl.h; sourceTree = "<group>"; };
+		552D9CDE1E84F64500858504 /* FJFlowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFlowControl.m; sourceTree = "<group>"; };
+		555D3DFA1E8B9BD2002BCA5E /* FJFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFlow.h; sourceTree = "<group>"; };
+		555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFlow.m; sourceTree = "<group>"; };
+		55A7CCA21E83FE100053D0C2 /* FJSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSessionProtocol.h; sourceTree = "<group>"; };
+		55A7CCA31E83FE100053D0C2 /* FJSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSessionProtocol.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55299D511E83C92500CD81F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55299D5B1E83C92500CD81F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55299D5F1E83C92500CD81F5 /* flowjacking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55299D4B1E83C92500CD81F5 = {
+			isa = PBXGroup;
+			children = (
+				55299D571E83C92500CD81F5 /* flowjacking */,
+				55299D621E83C92500CD81F5 /* flowjackingTests */,
+				55299D561E83C92500CD81F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55299D561E83C92500CD81F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55299D551E83C92500CD81F5 /* flowjacking.framework */,
+				55299D5E1E83C92500CD81F5 /* flowjackingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55299D571E83C92500CD81F5 /* flowjacking */ = {
+			isa = PBXGroup;
+			children = (
+				55299D581E83C92500CD81F5 /* flowjacking.h */,
+				55299DBA1E83CCE300CD81F5 /* FJURLProtocol.h */,
+				55299DBB1E83CCE300CD81F5 /* FJURLProtocol.m */,
+				55A7CCA21E83FE100053D0C2 /* FJSessionProtocol.h */,
+				55A7CCA31E83FE100053D0C2 /* FJSessionProtocol.m */,
+				552D9CDD1E84F64500858504 /* FJFlowControl.h */,
+				552D9CDE1E84F64500858504 /* FJFlowControl.m */,
+				55262FEC1E8BB44000629FFE /* FJFlowStatistic.h */,
+				55262FED1E8BB44000629FFE /* FJFlowStatistic.m */,
+				555D3DFA1E8B9BD2002BCA5E /* FJFlow.h */,
+				555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */,
+				55299D591E83C92500CD81F5 /* Info.plist */,
+			);
+			path = flowjacking;
+			sourceTree = "<group>";
+		};
+		55299D621E83C92500CD81F5 /* flowjackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				55299D631E83C92500CD81F5 /* flowjackingTests.m */,
+				55299D651E83C92500CD81F5 /* Info.plist */,
+			);
+			path = flowjackingTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55299D521E83C92500CD81F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55299DBC1E83CCE300CD81F5 /* FJURLProtocol.h in Headers */,
+				55A7CCA41E83FE100053D0C2 /* FJSessionProtocol.h in Headers */,
+				552D9CDF1E84F64500858504 /* FJFlowControl.h in Headers */,
+				55299D661E83C92500CD81F5 /* flowjacking.h in Headers */,
+				555D3DFC1E8B9BD2002BCA5E /* FJFlow.h in Headers */,
+				55262FEE1E8BB44000629FFE /* FJFlowStatistic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		55299D541E83C92500CD81F5 /* flowjacking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55299D691E83C92500CD81F5 /* Build configuration list for PBXNativeTarget "flowjacking" */;
+			buildPhases = (
+				55299D501E83C92500CD81F5 /* Sources */,
+				55299D511E83C92500CD81F5 /* Frameworks */,
+				55299D521E83C92500CD81F5 /* Headers */,
+				55299D531E83C92500CD81F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flowjacking;
+			productName = flowjacking;
+			productReference = 55299D551E83C92500CD81F5 /* flowjacking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55299D5D1E83C92500CD81F5 /* flowjackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55299D6C1E83C92500CD81F5 /* Build configuration list for PBXNativeTarget "flowjackingTests" */;
+			buildPhases = (
+				55299D5A1E83C92500CD81F5 /* Sources */,
+				55299D5B1E83C92500CD81F5 /* Frameworks */,
+				55299D5C1E83C92500CD81F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55299D611E83C92500CD81F5 /* PBXTargetDependency */,
+			);
+			name = flowjackingTests;
+			productName = flowjackingTests;
+			productReference = 55299D5E1E83C92500CD81F5 /* flowjackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55299D4C1E83C92500CD81F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = jasenhuang;
+				TargetAttributes = {
+					55299D541E83C92500CD81F5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XKMGNG3AWZ;
+						ProvisioningStyle = Automatic;
+					};
+					55299D5D1E83C92500CD81F5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XKMGNG3AWZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 55299D4F1E83C92500CD81F5 /* Build configuration list for PBXProject "flowjacking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55299D4B1E83C92500CD81F5;
+			productRefGroup = 55299D561E83C92500CD81F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55299D541E83C92500CD81F5 /* flowjacking */,
+				55299D5D1E83C92500CD81F5 /* flowjackingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55299D531E83C92500CD81F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55299D5C1E83C92500CD81F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55299D501E83C92500CD81F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A7CCA51E83FE100053D0C2 /* FJSessionProtocol.m in Sources */,
+				552D9CE01E84F64500858504 /* FJFlowControl.m in Sources */,
+				55299DBD1E83CCE300CD81F5 /* FJURLProtocol.m in Sources */,
+				55262FEF1E8BB44000629FFE /* FJFlowStatistic.m in Sources */,
+				555D3DFD1E8B9BD2002BCA5E /* FJFlow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55299D5A1E83C92500CD81F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55299D641E83C92500CD81F5 /* flowjackingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55299D611E83C92500CD81F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55299D541E83C92500CD81F5 /* flowjacking */;
+			targetProxy = 55299D601E83C92500CD81F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55299D671E83C92500CD81F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55299D681E83C92500CD81F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55299D6A1E83C92500CD81F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XKMGNG3AWZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = flowjacking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.flowjacking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55299D6B1E83C92500CD81F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XKMGNG3AWZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = flowjacking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.flowjacking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		55299D6D1E83C92500CD81F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XKMGNG3AWZ;
+				INFOPLIST_FILE = flowjackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.flowjackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55299D6E1E83C92500CD81F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XKMGNG3AWZ;
+				INFOPLIST_FILE = flowjackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.flowjackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55299D4F1E83C92500CD81F5 /* Build configuration list for PBXProject "flowjacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55299D671E83C92500CD81F5 /* Debug */,
+				55299D681E83C92500CD81F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55299D691E83C92500CD81F5 /* Build configuration list for PBXNativeTarget "flowjacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55299D6A1E83C92500CD81F5 /* Debug */,
+				55299D6B1E83C92500CD81F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55299D6C1E83C92500CD81F5 /* Build configuration list for PBXNativeTarget "flowjackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55299D6D1E83C92500CD81F5 /* Debug */,
+				55299D6E1E83C92500CD81F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55299D4C1E83C92500CD81F5 /* Project object */;
+}
