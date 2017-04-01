@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class FJPacket;
 @interface FJFlow : NSObject
 @property(nonatomic, strong, readonly) NSString* domain;
 
 - (instancetype)initWithDomain:(NSString*)domain;
-- (void)upward:(NSInteger)size;
-- (void)downward:(NSInteger)size;
+- (void)upward:(FJPacket*)packet;
+- (void)downward:(FJPacket*)packet;
 - (void)reset;
 @end

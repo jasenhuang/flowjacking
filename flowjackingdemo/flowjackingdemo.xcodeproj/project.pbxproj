@@ -17,7 +17,8 @@
 		55299D8B1E83C93F00CD81F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55299D891E83C93F00CD81F5 /* LaunchScreen.storyboard */; };
 		55299D961E83C93F00CD81F5 /* flowjackingdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299D951E83C93F00CD81F5 /* flowjackingdemoTests.m */; };
 		55299DA11E83C93F00CD81F5 /* flowjackingdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55299DA01E83C93F00CD81F5 /* flowjackingdemoUITests.m */; };
-		55299DB91E83C96400CD81F5 /* flowjacking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299DB41E83C95300CD81F5 /* flowjacking.framework */; };
+		55C75B581E8CCDA8008C7414 /* flowjacking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C75B551E8CCD9F008C7414 /* flowjacking.framework */; };
+		55C75B591E8CCDAC008C7414 /* flowjacking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C75B551E8CCD9F008C7414 /* flowjacking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,23 +36,23 @@
 			remoteGlobalIDString = 55299D771E83C93F00CD81F5;
 			remoteInfo = flowjackingdemo;
 		};
-		55299DB31E83C95300CD81F5 /* PBXContainerItemProxy */ = {
+		55C75B541E8CCD9F008C7414 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */;
+			containerPortal = 55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55299D551E83C92500CD81F5;
 			remoteInfo = flowjacking;
 		};
-		55299DB51E83C95300CD81F5 /* PBXContainerItemProxy */ = {
+		55C75B561E8CCD9F008C7414 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */;
+			containerPortal = 55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55299D5E1E83C92500CD81F5;
 			remoteInfo = flowjackingTests;
 		};
-		55299DB71E83C95D00CD81F5 /* PBXContainerItemProxy */ = {
+		55C75B5A1E8CCDB0008C7414 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */;
+			containerPortal = 55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 55299D541E83C92500CD81F5;
 			remoteInfo = flowjacking;
@@ -65,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				55C75B591E8CCDAC008C7414 /* flowjacking.framework in CopyFiles */,
 				55262FE71E8BA9AA00629FFE /* AFNetworking.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +91,7 @@
 		55299D9C1E83C93F00CD81F5 /* flowjackingdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowjackingdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55299DA01E83C93F00CD81F5 /* flowjackingdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flowjackingdemoUITests.m; sourceTree = "<group>"; };
 		55299DA21E83C93F00CD81F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = flowjacking.xcodeproj; path = ../flowjacking/flowjacking.xcodeproj; sourceTree = "<group>"; };
+		55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = flowjacking.xcodeproj; path = ../flowjacking.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C75B581E8CCDA8008C7414 /* flowjacking.framework in Frameworks */,
 				55262FE41E8BA99800629FFE /* AFNetworking.framework in Frameworks */,
-				55299DB91E83C96400CD81F5 /* flowjacking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +132,7 @@
 		55299D6F1E83C93F00CD81F5 = {
 			isa = PBXGroup;
 			children = (
-				55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */,
+				55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */,
 				55299D7A1E83C93F00CD81F5 /* flowjackingdemo */,
 				55299D941E83C93F00CD81F5 /* flowjackingdemoTests */,
 				55299D9F1E83C93F00CD81F5 /* flowjackingdemoUITests */,
@@ -191,11 +193,11 @@
 			path = flowjackingdemoUITests;
 			sourceTree = "<group>";
 		};
-		55299DAF1E83C95300CD81F5 /* Products */ = {
+		55C75B501E8CCD9F008C7414 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55299DB41E83C95300CD81F5 /* flowjacking.framework */,
-				55299DB61E83C95300CD81F5 /* flowjackingTests.xctest */,
+				55C75B551E8CCD9F008C7414 /* flowjacking.framework */,
+				55C75B571E8CCD9F008C7414 /* flowjackingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,7 +217,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				55299DB81E83C95D00CD81F5 /* PBXTargetDependency */,
+				55C75B5B1E8CCDB0008C7414 /* PBXTargetDependency */,
 			);
 			name = flowjackingdemo;
 			productName = flowjackingdemo;
@@ -299,8 +301,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 55299DAF1E83C95300CD81F5 /* Products */;
-					ProjectRef = 55299DAE1E83C95300CD81F5 /* flowjacking.xcodeproj */;
+					ProductGroup = 55C75B501E8CCD9F008C7414 /* Products */;
+					ProjectRef = 55C75B4F1E8CCD9F008C7414 /* flowjacking.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -313,18 +315,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		55299DB41E83C95300CD81F5 /* flowjacking.framework */ = {
+		55C75B551E8CCD9F008C7414 /* flowjacking.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = flowjacking.framework;
-			remoteRef = 55299DB31E83C95300CD81F5 /* PBXContainerItemProxy */;
+			remoteRef = 55C75B541E8CCD9F008C7414 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		55299DB61E83C95300CD81F5 /* flowjackingTests.xctest */ = {
+		55C75B571E8CCD9F008C7414 /* flowjackingTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = flowjackingTests.xctest;
-			remoteRef = 55299DB51E83C95300CD81F5 /* PBXContainerItemProxy */;
+			remoteRef = 55C75B561E8CCD9F008C7414 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -396,10 +398,10 @@
 			target = 55299D771E83C93F00CD81F5 /* flowjackingdemo */;
 			targetProxy = 55299D9D1E83C93F00CD81F5 /* PBXContainerItemProxy */;
 		};
-		55299DB81E83C95D00CD81F5 /* PBXTargetDependency */ = {
+		55C75B5B1E8CCDB0008C7414 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = flowjacking;
-			targetProxy = 55299DB71E83C95D00CD81F5 /* PBXContainerItemProxy */;
+			targetProxy = 55C75B5A1E8CCDB0008C7414 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

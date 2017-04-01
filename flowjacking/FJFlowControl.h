@@ -10,6 +10,6 @@
 
 @interface FJFlowControl : NSObject
 + (FJFlowControl*)shareControl;
-
-
+- (void)start;
+- (void)stop;
 @end

@@ -18,8 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [NSURLProtocol registerClass:[FJURLProtocol class]];
-    
+    [[FJFlowControl shareControl] start];
     return YES;
 }
 

@@ -8,6 +8,7 @@
 
 #import "FJFlowStatistic.h"
 #import "FJFlow.h"
+#import "FJPacket.h"
 
 NSString* const FJRequestKey = @"FJRequestKey";
 
@@ -42,7 +43,8 @@ NSString* const FJRequestKey = @"FJRequestKey";
         flow = [[FJFlow alloc] initWithDomain:domain];
         [self.statistic setObject:flow forKeyedSubscript:domain];
     }
-    [flow upward:length];
+    FJPacket* packet = [[FJPacket alloc] initWithSize:length];
+    [flow upward:packet];
 }
 
 - (void) downwardPacket:(NSInteger)length domain:(NSString*)domain
@@ -53,7 +55,8 @@ NSString* const FJRequestKey = @"FJRequestKey";
         flow = [[FJFlow alloc] initWithDomain:domain];
         [self.statistic setObject:flow forKeyedSubscript:domain];
     }
-    [flow downward:length];
+    FJPacket* packet = [[FJPacket alloc] initWithSize:length];
+    [flow downward:packet];
 }
 
 - (void)resetDomain:(NSString*)domain

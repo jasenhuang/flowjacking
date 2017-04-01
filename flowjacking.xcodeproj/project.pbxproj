@@ -20,6 +20,8 @@
 		555D3DFD1E8B9BD2002BCA5E /* FJFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */; };
 		55A7CCA41E83FE100053D0C2 /* FJSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A7CCA21E83FE100053D0C2 /* FJSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55A7CCA51E83FE100053D0C2 /* FJSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A7CCA31E83FE100053D0C2 /* FJSessionProtocol.m */; };
+		55C75B5E1E8CCDD3008C7414 /* FJPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C75B5C1E8CCDD3008C7414 /* FJPacket.h */; };
+		55C75B5F1E8CCDD3008C7414 /* FJPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C75B5D1E8CCDD3008C7414 /* FJPacket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFlow.m; sourceTree = "<group>"; };
 		55A7CCA21E83FE100053D0C2 /* FJSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSessionProtocol.h; sourceTree = "<group>"; };
 		55A7CCA31E83FE100053D0C2 /* FJSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSessionProtocol.m; sourceTree = "<group>"; };
+		55C75B5C1E8CCDD3008C7414 /* FJPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPacket.h; sourceTree = "<group>"; };
+		55C75B5D1E8CCDD3008C7414 /* FJPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPacket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				55262FED1E8BB44000629FFE /* FJFlowStatistic.m */,
 				555D3DFA1E8B9BD2002BCA5E /* FJFlow.h */,
 				555D3DFB1E8B9BD2002BCA5E /* FJFlow.m */,
+				55C75B5C1E8CCDD3008C7414 /* FJPacket.h */,
+				55C75B5D1E8CCDD3008C7414 /* FJPacket.m */,
 				55299D591E83C92500CD81F5 /* Info.plist */,
 			);
 			path = flowjacking;
@@ -125,6 +131,7 @@
 			files = (
 				55299DBC1E83CCE300CD81F5 /* FJURLProtocol.h in Headers */,
 				55A7CCA41E83FE100053D0C2 /* FJSessionProtocol.h in Headers */,
+				55C75B5E1E8CCDD3008C7414 /* FJPacket.h in Headers */,
 				552D9CDF1E84F64500858504 /* FJFlowControl.h in Headers */,
 				55299D661E83C92500CD81F5 /* flowjacking.h in Headers */,
 				555D3DFC1E8B9BD2002BCA5E /* FJFlow.h in Headers */,
@@ -233,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A7CCA51E83FE100053D0C2 /* FJSessionProtocol.m in Sources */,
+				55C75B5F1E8CCDD3008C7414 /* FJPacket.m in Sources */,
 				552D9CE01E84F64500858504 /* FJFlowControl.m in Sources */,
 				55299DBD1E83CCE300CD81F5 /* FJURLProtocol.m in Sources */,
 				55262FEF1E8BB44000629FFE /* FJFlowStatistic.m in Sources */,

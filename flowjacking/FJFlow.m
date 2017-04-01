@@ -7,11 +7,12 @@
 //
 
 #import "FJFlow.h"
+#import "FJPacket.h"
 
 @interface FJFlow()
 @property(nonatomic, strong) NSString* domain;
-@property(nonatomic, assign) NSUInteger upwardFlow;
-@property(nonatomic, assign) NSUInteger downwardFlow;
+@property(nonatomic, strong) NSMutableArray<FJPacket*>* upwardPackets;
+@property(nonatomic, strong) NSMutableArray<FJPacket*>* downwardPackets;
 @end
 
 @implementation FJFlow
@@ -22,17 +23,17 @@
     }
     return self;
 }
-- (void)upward:(NSInteger)size
+- (void)upward:(FJPacket*)packet
 {
-    self.upwardFlow += size;
+    [self.upwardPackets addObject:packet];
 }
-- (void)downward:(NSInteger)size
+- (void)downward:(FJPacket*)packet
 {
-    self.downwardFlow += size;
+    [self.downwardPackets addObject:packet];
 }
 - (void)reset
 {
-    self.upwardFlow = 0;
-    self.downwardFlow = 0;
+    [self.upwardPackets removeAllObjects];
+    [self.downwardPackets removeAllObjects];
 }
 @end

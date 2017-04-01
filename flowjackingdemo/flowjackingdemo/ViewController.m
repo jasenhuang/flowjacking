@@ -20,13 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSURL* url = [NSURL URLWithString:@"https://www.baidu.com/"];
-    NSURLRequest* req = [NSURLRequest requestWithURL:url cachePolicy:0 timeoutInterval:0];
+    //NSURLRequest* req = [NSURLRequest requestWithURL:url cachePolicy:0 timeoutInterval:0];
     //[self.webview loadRequest:req];
     
     NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    configuration.protocolClasses = @[[FJURLProtocol class]];
     self.manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
-
+    [configuration setProtocolClasses:@[[FJSessionProtocol class]]];
     self.manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     

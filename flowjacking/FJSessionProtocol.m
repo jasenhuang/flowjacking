@@ -7,54 +7,13 @@
 //
 
 #import "FJSessionProtocol.h"
-#import <objc/runtime.h>
 #import "FJFlowStatistic.h"
-
-void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
-{
-    /* if current class not exist selector, then get super*/
-    Method originalMethod = class_getInstanceMethod(cls, origSelector);
-    Method swizzledMethod = class_getInstanceMethod(cls, newSelector);
-    /* add selector if not exist, implement append with method */
-    if (class_addMethod(cls,
-                        origSelector,
-                        method_getImplementation(swizzledMethod),
-                        method_getTypeEncoding(swizzledMethod)) ) {
-        /* replace class instance method, added if selector not exist */
-        /* for class cluster , it always add new selector here */
-        class_replaceMethod(cls,
-                            newSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-        
-    } else {
-        /* swizzleMethod maybe belong to super */
-        class_replaceMethod(cls,
-                            newSelector,
-                            class_replaceMethod(cls,
-                                                origSelector,
-                                                method_getImplementation(swizzledMethod),
-                                                method_getTypeEncoding(swizzledMethod)),
-                            method_getTypeEncoding(originalMethod));
-    }
-}
 
 @interface FJSessionProtocol()<NSURLSessionDelegate, NSURLSessionDataDelegate>
 @property(nonatomic,strong) NSURLSession *session;
 @end
 
 @implementation FJSessionProtocol
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        NSURLSessionConfiguration* configuration = [[NSURLSessionConfiguration alloc] init];
-        _session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
-    }
-    return self;
-}
-
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
     if ([NSURLProtocol propertyForKey:FJRequestKey inRequest:request]) {
@@ -112,6 +71,10 @@ void swizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector)
  */
 - (void)startLoading
 {
+    if (!self.session){
+        NSURLSessionConfiguration* configuration = [[NSURLSessionConfiguration alloc] init];
+        self.session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    }
     NSMutableURLRequest* request = [self.request mutableCopy];
     [NSURLProtocol setProperty:@(YES) forKey:FJRequestKey inRequest:request];
     NSURLSessionDataTask *task = [self.session dataTaskWithRequest:self.request];
