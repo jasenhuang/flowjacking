@@ -104,12 +104,12 @@
 - (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten
 totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
-    [[FJFlowStatistic shareStatistic] upwardPacket:bytesWritten domain:connection.currentRequest.URL.host];
+    [[FJFlowStatistic shareStatistic] upwardPacket:bytesWritten domain:self.request.URL.host];
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.client URLProtocol:self didLoadData:data];
-    [[FJFlowStatistic shareStatistic] downwardPacket:data.length domain:connection.currentRequest.URL.host];
+    [[FJFlowStatistic shareStatistic] downwardPacket:data.length domain:self.request.URL.host];
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {

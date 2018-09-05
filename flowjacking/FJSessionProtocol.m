@@ -72,8 +72,8 @@
 - (void)startLoading
 {
     if (!self.session){
-        NSURLSessionConfiguration* configuration = [[NSURLSessionConfiguration alloc] init];
-        self.session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+        NSURLSessionConfiguration* configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        self.session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
     }
     NSMutableURLRequest* request = [self.request mutableCopy];
     [NSURLProtocol setProperty:@(YES) forKey:FJRequestKey inRequest:request];
@@ -94,4 +94,38 @@
 {
     [self.client URLProtocol:self didFailWithError:[[NSError alloc] initWithDomain:@"stop loading" code:-1 userInfo:nil]];
 }
+
+#pragma mark - delegate
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+didReceiveResponse:(NSURLResponse *)response
+ completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler
+{
+    [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+   didSendBodyData:(int64_t)bytesSent
+    totalBytesSent:(int64_t)totalBytesSent
+totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
+{
+    [[FJFlowStatistic shareStatistic] upwardPacket:bytesSent domain:self.request.URL.host];
+}
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data
+{
+    [self.client URLProtocol:self didLoadData:data];
+    [[FJFlowStatistic shareStatistic] downwardPacket:data.length domain:self.request.URL.host];
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(nullable NSError *)error
+{
+    if (error){
+        [self.client URLProtocol:self didFailWithError:error];
+    }else{
+        [self.client URLProtocolDidFinishLoading:self];
+    }
+}
+
 @end
